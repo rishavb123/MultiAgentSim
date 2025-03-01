@@ -1,0 +1,7 @@
+hydra:
+    verbose: true
+wandb:
+    mode: disabled
+defaults:
+    - mas
+    - _self_

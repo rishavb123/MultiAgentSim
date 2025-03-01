@@ -1,0 +1,25 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 61.0.0"]
+
+[project]
+name = "mas"
+description = "Experiments to simulate agents in custom designed cooperative or adversarial environments."
+keywords = ["multi", "agent", "simulation", "model"]
+authors = [{ name = "Rishav Bhagat", email = "rishavbhagat.cs@gmail.com" }]
+readme = "README.md"
+dynamic = ["version"]
+requires-python = ">=3.11"
+dependencies = ["experiment-lab"]
+
+[project.urls]
+Repository = "https://github.com/rishavb123/MultiAgentSim"
+
+[project.optional-dependencies]
+all = []
+dev = ["black"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mas*"]
+namespaces = false

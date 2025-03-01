@@ -1,0 +1,9 @@
+experiment_name: mas_experiment
+n_runs: 1
+n_run_method: series
+seed: 0
+wandb:
+    project: mas
+defaults:
+    - mas_config
+    - _self_

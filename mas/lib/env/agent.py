@@ -16,9 +16,11 @@ class Agent(ABC):
         pass
 
     @abstractmethod
-    def update(self, state: Any) -> None:
+    def update(self, state: Any, observation: Any) -> None:
         pass
 
-    @property
-    def should_remove(self) -> bool:
+    def should_kill(self) -> bool:
         return False
+    
+    def kill(self):
+        pass
